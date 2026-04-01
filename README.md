@@ -75,3 +75,25 @@ npm run dev
 - Que me pases los usuarios finales.
 - Que me pases la URL embed de Google Maps que quieres mostrar.
 - Si quieres, en el siguiente paso puedo endurecer la seguridad para no guardar contrasenas en texto plano y dejar el backend listo para produccion.
+
+## Deploy
+
+### Railway
+
+Si Railway esta conectado al repositorio completo y despliega desde la raiz, ya puede usar el [Dockerfile](/C:/Users/rk88g/Documents/GitHub/rk_ducto/Dockerfile) del root para levantar el backend sin depender de autodeteccion.
+
+Variables recomendadas en Railway:
+
+- `JWT_SECRET`
+- `CORS_ORIGIN`
+- `AUTHORIZED_USERS_JSON`
+- `TOKEN_DURATION`
+
+Si prefieres usar Railway en modo monorepo sin Docker, tambien puedes configurar el servicio con:
+
+- `Root Directory`: `/backend`
+- `Watch Paths`: `/backend/**`
+
+### Vercel
+
+En Vercel configura el proyecto para que use como root directory `frontend/`.
