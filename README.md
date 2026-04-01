@@ -97,3 +97,12 @@ Si prefieres usar Railway en modo monorepo sin Docker, tambien puedes configurar
 ### Vercel
 
 En Vercel configura el proyecto para que use como root directory `frontend/`.
+
+Si hoy ves `404: NOT_FOUND` en `rk-ducto.vercel.app`, eso normalmente significa que Vercel desplego el repositorio desde la raiz en lugar de `frontend/`.
+
+Configuracion esperada en Vercel:
+
+- `Root Directory`: `frontend`
+- `Framework Preset`: `Next.js`
+
+Despues de guardar esos cambios, vuelve a hacer un redeploy.
