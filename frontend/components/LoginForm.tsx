@@ -90,7 +90,7 @@ export function LoginForm() {
           <input
             autoComplete="username"
             onChange={(event) => setUsername(event.target.value)}
-            placeholder="rk@ductopmx.com"
+            placeholder="ductopemex"
             required
             value={username}
           />
