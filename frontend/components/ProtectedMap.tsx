@@ -110,7 +110,6 @@ export function ProtectedMap() {
       <header className="map-topbar">
         <div>
           <p className="eyebrow">Panel privado</p>
-          <h1>Mapa del proyecto</h1>
           <p className="lead compact">
             {clientName
               ? `Sesion activa para ${clientName}.`
