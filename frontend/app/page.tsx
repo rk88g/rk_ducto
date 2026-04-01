@@ -15,16 +15,15 @@ export default function LoginPage() {
     <main className="auth-shell">
       <section className="auth-copy">
         <p className="eyebrow">Acceso privado</p>
-        <h1>RK Ducto Salamanca</h1>
+        <h1>RK Ducto</h1>
         <p className="lead">
-          El mapa solo se muestra a clientes autorizados. Inicia sesion para
-          entrar al panel privado y visualizar el embed de Google Maps.
+          El mapa solo se muestra a clientes autorizados.
         </p>
         <div className="feature-strip">
-          <span>Hasta 5 clientes</span>
-          <span>Sesion protegida</span>
-          <span>Frontend en Vercel</span>
-          <span>Backend en Railway</span>
+          <span>RK</span>
+          <span>MAMBO</span>
+          <span>X3</span>
+          <span>MORE</span>
         </div>
       </section>
       <Suspense fallback={<section className="auth-card">Cargando login...</section>}>

@@ -78,10 +78,9 @@ export function LoginForm() {
     <section className="auth-card">
       <div className="card-head">
         <p className="card-kicker">Login</p>
-        <h2>Ingresa tus credenciales</h2>
+        <h2></h2>
         <p>
-          Cuando me compartas los usuarios finales, solo tendremos que
-          registrarlos en el backend.
+          Solo usuarios permitidos.
         </p>
       </div>
 
@@ -91,18 +90,18 @@ export function LoginForm() {
           <input
             autoComplete="username"
             onChange={(event) => setUsername(event.target.value)}
-            placeholder="cliente01"
+            placeholder="rk@ductopmx.com"
             required
             value={username}
           />
         </label>
 
         <label>
-          Contrasena
+          Password
           <input
             autoComplete="current-password"
             onChange={(event) => setPassword(event.target.value)}
-            placeholder="Tu acceso"
+            placeholder="Tu clave"
             required
             type="password"
             value={password}
